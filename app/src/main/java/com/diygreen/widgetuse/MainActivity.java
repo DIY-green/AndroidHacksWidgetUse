@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_test1:
                 overlay(FormDateValidateActivity.class);
                 break;
+            case R.id.btn_test2:
+                overlay(FormatTextActivity.class);
+                break;
         }
     }
 
