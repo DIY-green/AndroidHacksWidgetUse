@@ -47,4 +47,15 @@
         android:layout_alignParentStart="true"
         android:textAllCaps="false"
         android:onClick="onClick" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Round Button"
+        android:id="@+id/btn_test4"
+        android:layout_below="@+id/btn_test3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:onClick="onClick" />
 </RelativeLayout>

@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_test3:
                 overlay(LedTextActivity.class);
                 break;
+            case R.id.btn_test4:
+                overlay(RoundButtonActivity.class);
+                break;
         }
     }
 
