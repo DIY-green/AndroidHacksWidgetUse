@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".FormDateValidateActivity" />
-        <activity android:name=".FormatTextActivity"></activity>
+        <activity android:name=".FormatTextActivity" />
+        <activity android:name=".LedTextActivity"></activity>
     </application>
 
 </manifest>
