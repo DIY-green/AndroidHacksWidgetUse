@@ -20,7 +20,6 @@ public class FormDateValidateActivity extends AppCompatActivity {
     private EditText mDateET;
     private Button mDateBtn;
 
-    private String mCurrentDate;
     private int mYear;
     private int mMonth;
     private int mDay;
