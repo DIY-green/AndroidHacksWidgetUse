@@ -14,7 +14,7 @@ import java.util.Calendar;
 
 public class FormDateValidateActivity extends AppCompatActivity {
 
-    private static final int DATE_DIALOG1_ID = 1;
+    private static final int DATE_DIALOG_ID = 1;
     private static final int DATE_DIALOG2_ID = 2;
 
     private EditText mDateET;
@@ -79,10 +79,11 @@ public class FormDateValidateActivity extends AppCompatActivity {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.et_date:
-                showDialog(DATE_DIALOG1_ID);
+                showDialog(DATE_DIALOG_ID);
                 break;
             case R.id.btn_date:
-                showDialog(DATE_DIALOG2_ID);
+                new DatePickerDialog(this, mDateSetListener2, mYear,
+                        mMonth, mDay).show();
                 break;
         }
     }
@@ -90,11 +91,8 @@ public class FormDateValidateActivity extends AppCompatActivity {
     @Override
     protected Dialog onCreateDialog(int id) {
         switch (id) {
-            case DATE_DIALOG1_ID:
+            case DATE_DIALOG_ID:
                 return new DatePickerDialog(this, mDateSetListener1, mYear,
-                        mMonth, mDay);
-            case DATE_DIALOG2_ID:
-                return new DatePickerDialog(this, mDateSetListener2, mYear,
                         mMonth, mDay);
         }
         return super.onCreateDialog(id);
