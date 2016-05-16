@@ -18,7 +18,8 @@
         <activity android:name=".FormDateValidateActivity" />
         <activity android:name=".FormatTextActivity" />
         <activity android:name=".LedTextActivity" />
-        <activity android:name=".RoundButtonActivity"></activity>
+        <activity android:name=".RoundButtonActivity" />
+        <activity android:name=".GetViewWHActivity"></activity>
     </application>
 
 </manifest>

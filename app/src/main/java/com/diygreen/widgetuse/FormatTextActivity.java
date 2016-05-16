@@ -25,7 +25,7 @@ public class FormatTextActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        mTestTV1 = (TextView) findViewById(R.id.tv_test1);
+        mTestTV1 = (TextView) findViewById(R.id.tv_showresult);
         mTestTV2 = (TextView) findViewById(R.id.tv_test2);
     }
 
