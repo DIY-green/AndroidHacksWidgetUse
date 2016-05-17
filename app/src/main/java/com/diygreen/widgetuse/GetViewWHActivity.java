@@ -11,6 +11,7 @@ public class GetViewWHActivity extends AppCompatActivity {
 
     private TextView mShowResult1TV;
     private TextView mShowResult2TV;
+    private TextView mShowResult3TV;
     private Button mTest1Btn;
     private Button mTest2Btn;
     private View mTestView;
@@ -26,6 +27,7 @@ public class GetViewWHActivity extends AppCompatActivity {
     private void initView() {
         mShowResult1TV = (TextView) findViewById(R.id.tv_showresult);
         mShowResult2TV = (TextView) findViewById(R.id.tv_showresult2);
+        mShowResult3TV = (TextView) findViewById(R.id.tv_showresult3);
         mTest1Btn = (Button) findViewById(R.id.btn_test1);
         mTest2Btn = (Button) findViewById(R.id.btn_test2);
         mTestView = findViewById(R.id.view_test);
@@ -48,7 +50,14 @@ public class GetViewWHActivity extends AppCompatActivity {
     }
 
     public void onClick(View v) {
-        getViewWHByPost(v);
+        switch (v.getId()) {
+            case R.id.btn_test1:
+                getViewWHByPost(v);
+                break;
+            case R.id.btn_test2:
+                showViewWH("onClick()", mShowResult1TV);
+                break;
+        }
     }
 
     private void getViewWHByPost(final View v) {
@@ -61,6 +70,12 @@ public class GetViewWHActivity extends AppCompatActivity {
                         .show();
             }
         });
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        showViewWH("onWindowFocusChanged()", mShowResult3TV);
     }
 
     @Override

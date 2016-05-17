@@ -48,7 +48,7 @@
         android:id="@+id/tv_showresult2"
         android:layout_below="@+id/tv_showresult"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp" />
+        android:layout_marginTop="50dp" />
 
     <View
         android:id="@+id/view_test"
@@ -58,4 +58,14 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:background="#00ff00"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="显示View宽高"
+        android:id="@+id/tv_showresult3"
+        android:layout_above="@+id/view_test"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
