@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.diygreen.widgetuse">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,7 +25,8 @@
         <activity
             android:name=".VideoViewActivity"
             android:configChanges="orientation" />
-        <activity android:name=".AccelerateBootActivity"></activity>
+        <activity android:name=".AccelerateBootActivity"
+            android:theme="@style/Theme.NoBackground"/>
     </application>
 
 </manifest>
