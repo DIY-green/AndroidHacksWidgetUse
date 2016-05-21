@@ -17,6 +17,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Activity 启动加速演示"
         android:textAllCaps="false"
+        android:textColor="#ffffff"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
