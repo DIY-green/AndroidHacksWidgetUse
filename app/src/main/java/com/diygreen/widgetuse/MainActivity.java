@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_test6:
                 overlay(VideoViewActivity.class);
                 break;
+            case R.id.btn_test7:
+                overlay(AccelerateBootActivity.class);
+                break;
         }
     }
 

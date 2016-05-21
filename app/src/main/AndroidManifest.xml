@@ -20,8 +20,10 @@
         <activity android:name=".LedTextActivity" />
         <activity android:name=".RoundButtonActivity" />
         <activity android:name=".GetViewWHActivity" />
-        <activity android:name=".VideoViewActivity"
-            android:configChanges="orientation"/>
+        <activity
+            android:name=".VideoViewActivity"
+            android:configChanges="orientation" />
+        <activity android:name=".AccelerateBootActivity"></activity>
     </application>
 
 </manifest>
