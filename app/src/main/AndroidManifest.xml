@@ -19,7 +19,9 @@
         <activity android:name=".FormatTextActivity" />
         <activity android:name=".LedTextActivity" />
         <activity android:name=".RoundButtonActivity" />
-        <activity android:name=".GetViewWHActivity"></activity>
+        <activity android:name=".GetViewWHActivity" />
+        <activity android:name=".VideoViewActivity"
+            android:configChanges="orientation"/>
     </application>
 
 </manifest>
