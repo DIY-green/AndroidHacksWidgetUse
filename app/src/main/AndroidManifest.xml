@@ -26,7 +26,7 @@
             android:name=".VideoViewActivity"
             android:configChanges="orientation" />
         <activity android:name=".AccelerateBootActivity"
-            android:theme="@style/Theme.NoBackground"/>
+            android:theme="@style/Theme.NoBackground" />
     </application>
 
 </manifest>
